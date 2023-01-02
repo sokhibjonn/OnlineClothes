@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div  class="container-fluid">
+    <div class="container">
+        <div class="row">
+          <div class="col">
+           
+                    <form style="width: 50%;" class="d-flex">
+                        <input style="width: 10%;margin-top: 15%;margin-left: -28%;" class="form-control me-2 col" id="myInputt" onclick="mySearchch()" type="search" placeholder="Search" aria-label="Search">
+                      
+                    </form>
+          </div>
+          <div class="col-sm">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+               
+                <li class="nav-item">
+                <a href="index.html">  <img class="nwc-img nw-logo-img col" src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png" alt="NNNOW Logo">  </a>            </li>
+              </ul>
+          </div>
+          <div class="col-sm"> 
+            <svg style="width: 5%;margin-left: 80%;margin-top: 10%;color: #FF3399;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+              </svg>
+              <!-- <span class="nw-header-seperator">|</span> -->
+            <svg  style="width: 5%;margin-left: 90%;margin-top: -12%;color: #FF3399;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
+              </svg>
+              <svg style="width: 5%;margin-left: 100%;margin-top: -25%;color: #FF3399;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+        </div>
+        </div>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+         
+          </div>
+          <div class="container">
+            <div class="row">
+              <div style="font-weight: 700;" id="project1" class="col">MEN</div>
+             <div class="container hide">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                      <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                        <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                            Casual Shirts <br>
+                            Formal Shirts <br>
+                            Sweatshirts <br>
+                            Jackets <br>
+                            Suits & Blazers <br>
+                            Sweaters</p>
+                      </div>
+                      <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                        <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                            Chinos <br>
+                            Casual Trousers <br>
+                            Formal Trousers <br>
+                            Shorts <br>
+                            Track Pants</p>
+                      </div>
+                      <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                        <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                            Casual Shoes <br>
+                            Sneakers <br>
+                            Loafers <br>
+                            Sandals <br>
+                            Flip Flops</p>
+                      </div>
+                      <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                    <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                        Belts & Wallets <br>
+                        Sunglasses & Watches <br>
+                        Bags & Backpacks <br>
+                        Fragrances <br>
+                        Grooming & Personal care <br>
+                        Face Mask <br>
+                        Deodorants</p></div>
+                      <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                        Trunks <br>
+                        Vests</p></div>
+                      <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                    <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                        Calvin Klein <br>
+                        Tommy Hilfiger <br>
+                        Flying Machine <br>
+                        Aéropostale <br>
+                        Arrow <br>
+                        Ruggers <br>
+                        Colt</p></div>
+                    </div>
+                  </div>
+                  <!-- WOMEN -->
+              <div style="font-weight: 700;" id="project2" class="col">WOMEN</div>
+              <div class="container hidee">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                  <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                    <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                        Casual Shirts <br>
+                        Formal Shirts <br>
+                        Sweatshirts <br>
+                        Jackets <br>
+                        Suits & Blazers <br>
+                        Sweaters</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                        Chinos <br>
+                        Casual Trousers <br>
+                        Formal Trousers <br>
+                        Shorts <br>
+                        Track Pants</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                        Casual Shoes <br>
+                        Sneakers <br>
+                        Loafers <br>
+                        Sandals <br>
+                        Flip Flops</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                    Belts & Wallets <br>
+                    Sunglasses & Watches <br>
+                    Bags & Backpacks <br>
+                    Fragrances <br>
+                    Grooming & Personal care <br>
+                    Face Mask <br>
+                    Deodorants</p></div>
+                  <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                    Trunks <br>
+                    Vests</p></div>
+                  <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                    Calvin Klein <br>
+                    Tommy Hilfiger <br>
+                    Flying Machine <br>
+                    Aéropostale <br>
+                    Arrow <br>
+                    Ruggers <br>
+                    Colt</p></div>
+                </div>
+              </div>
+              <!-- KIDS -->
+              <div style="font-weight: 700;" id="project1" class="col">KIDS</div>
+              <div class="container hidee">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                  <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                    <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                        Casual Shirts <br>
+                        Formal Shirts <br>
+                        Sweatshirts <br>
+                        Jackets <br>
+                        Suits & Blazers <br>
+                        Sweaters</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                        Chinos <br>
+                        Casual Trousers <br>
+                        Formal Trousers <br>
+                        Shorts <br>
+                        Track Pants</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                        Casual Shoes <br>
+                        Sneakers <br>
+                        Loafers <br>
+                        Sandals <br>
+                        Flip Flops</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                    Belts & Wallets <br>
+                    Sunglasses & Watches <br>
+                    Bags & Backpacks <br>
+                    Fragrances <br>
+                    Grooming & Personal care <br>
+                    Face Mask <br>
+                    Deodorants</p></div>
+                  <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                    Trunks <br>
+                    Vests</p></div>
+                  <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                    Calvin Klein <br>
+                    Tommy Hilfiger <br>
+                    Flying Machine <br>
+                    Aéropostale <br>
+                    Arrow <br>
+                    Ruggers <br>
+                    Colt</p></div>
+                </div>
+              </div>
+
+
+              <!-- sephora -->
+              <div style="font-weight: 700;" id="project1" class="col">SEPHORA</div>
+              <div class="container hidee">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                  <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                    <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                        Casual Shirts <br>
+                        Formal Shirts <br>
+                        Sweatshirts <br>
+                        Jackets <br>
+                        Suits & Blazers <br>
+                        Sweaters</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                        Chinos <br>
+                        Casual Trousers <br>
+                        Formal Trousers <br>
+                        Shorts <br>
+                        Track Pants</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                        Casual Shoes <br>
+                        Sneakers <br>
+                        Loafers <br>
+                        Sandals <br>
+                        Flip Flops</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                    Belts & Wallets <br>
+                    Sunglasses & Watches <br>
+                    Bags & Backpacks <br>
+                    Fragrances <br>
+                    Grooming & Personal care <br>
+                    Face Mask <br>
+                    Deodorants</p></div>
+                  <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                    Trunks <br>
+                    Vests</p></div>
+                  <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                    Calvin Klein <br>
+                    Tommy Hilfiger <br>
+                    Flying Machine <br>
+                    Aéropostale <br>
+                    Arrow <br>
+                    Ruggers <br>
+                    Colt</p></div>
+                </div>
+              </div>
+
+
+
+
+              <!-- collections -->
+              <div style="font-weight: 700;" id="project1" class="col">COLLECTIONS</div>
+              <div class="container hidee">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                  <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                    <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                        Casual Shirts <br>
+                        Formal Shirts <br>
+                        Sweatshirts <br>
+                        Jackets <br>
+                        Suits & Blazers <br>
+                        Sweaters</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                        Chinos <br>
+                        Casual Trousers <br>
+                        Formal Trousers <br>
+                        Shorts <br>
+                        Track Pants</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                        Casual Shoes <br>
+                        Sneakers <br>
+                        Loafers <br>
+                        Sandals <br>
+                        Flip Flops</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                    Belts & Wallets <br>
+                    Sunglasses & Watches <br>
+                    Bags & Backpacks <br>
+                    Fragrances <br>
+                    Grooming & Personal care <br>
+                    Face Mask <br>
+                    Deodorants</p></div>
+                  <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                    Trunks <br>
+                    Vests</p></div>
+                  <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                    Calvin Klein <br>
+                    Tommy Hilfiger <br>
+                    Flying Machine <br>
+                    Aéropostale <br>
+                    Arrow <br>
+                    Ruggers <br>
+                    Colt</p></div>
+                </div>
+              </div>
+
+
+
+
+
+
+              <!-- footwear -->
+              <div style="font-weight: 700;" id="project1" class="col">FOOTWEAR</div>
+              <div class="container hidee">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                  <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                    <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                        Casual Shirts <br>
+                        Formal Shirts <br>
+                        Sweatshirts <br>
+                        Jackets <br>
+                        Suits & Blazers <br>
+                        Sweaters</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                        Chinos <br>
+                        Casual Trousers <br>
+                        Formal Trousers <br>
+                        Shorts <br>
+                        Track Pants</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                        Casual Shoes <br>
+                        Sneakers <br>
+                        Loafers <br>
+                        Sandals <br>
+                        Flip Flops</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                    Belts & Wallets <br>
+                    Sunglasses & Watches <br>
+                    Bags & Backpacks <br>
+                    Fragrances <br>
+                    Grooming & Personal care <br>
+                    Face Mask <br>
+                    Deodorants</p></div>
+                  <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                    Trunks <br>
+                    Vests</p></div>
+                  <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                    Calvin Klein <br>
+                    Tommy Hilfiger <br>
+                    Flying Machine <br>
+                    Aéropostale <br>
+                    Arrow <br>
+                    Ruggers <br>
+                    Colt</p></div>
+                </div>
+              </div>
+
+
+
+              <!-- brands -->
+              <div style="font-weight: 700;" id="project1" class="col">BRANDS</div>
+              <div class="container hidee">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                  <div style="color: black;font-weight: 700;" class="col">TOP WEAR
+                    <p style="font-size: 13px;font-weight: 500;">T-Shirts & Polos <br>
+                        Casual Shirts <br>
+                        Formal Shirts <br>
+                        Sweatshirts <br>
+                        Jackets <br>
+                        Suits & Blazers <br>
+                        Sweaters</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">BOTTOMWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Jeans <br>
+                        Chinos <br>
+                        Casual Trousers <br>
+                        Formal Trousers <br>
+                        Shorts <br>
+                        Track Pants</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">FOOTWEAR
+                    <p style="font-size: 13px;font-weight: 500;">Formal Shoes <br>
+                        Casual Shoes <br>
+                        Sneakers <br>
+                        Loafers <br>
+                        Sandals <br>
+                        Flip Flops</p>
+                  </div>
+                  <div style="color: black;font-weight: 700;" class="col">ACCESSORIES
+                <p style="font-size: 13px;font-weight: 500;">Caps & Hats <br>
+                    Belts & Wallets <br>
+                    Sunglasses & Watches <br>
+                    Bags & Backpacks <br>
+                    Fragrances <br>
+                    Grooming & Personal care <br>
+                    Face Mask <br>
+                    Deodorants</p></div>
+                  <div style="color: black;font-weight: 700;" class="col">INNERWEAR
+                <p style="font-size: 13px;font-weight: 500;">Briefs <br>
+                    Trunks <br>
+                    Vests</p></div>
+                  <div style="color: black;font-weight: 700;" class="col-6">BRANDS
+                <p style="font-size: 13px;font-weight: 500;">U.S. Polo Assn. <br>
+                    Calvin Klein <br>
+                    Tommy Hilfiger <br>
+                    Flying Machine <br>
+                    Aéropostale <br>
+                    Arrow <br>
+                    Ruggers <br>
+                    Colt</p></div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div  class="row">
+            <div class="col-4"><div class="card text-dark bg-white mb-3" style="max-width: 14rem;border: 0px;">
+                <div class="card-body">
+                    <h5 style="font-size: 15px; font-weight: 700; cursor: pointer;" class="card-title mt-2" id="cat">CATEGORY</h5>
+                    <div id="cat2">
+    
+                        <input type="checkbox"  value="jeans" onclick="filter()" id="jeans" >
+                        <label style="font-size: 15px;" for="jeans" id="cat2" >Shoes</label> <br>
+                        
+                        <input type="checkbox"  value="shorts" onclick="filter()" id="shorts" >
+                        <label style="font-size: 15px;" for="shorts" id="cat2" >Slip-On Shoes</label> <br> 
+
+                        <input type="checkbox"  value="legg" onclick="filter()" id="legg" >
+                        <label style="font-size: 15px;" for="legg" id="cat2" >Sneakers</label> <br>
+
+                        <input type="checkbox"  value="jogger" onclick="filter()" id="jogger" >
+                        <label style="font-size: 15px;" for="jogger" id="cat2" >Sandals</label> <br>
+
+
+                        <input type="checkbox"  value="trousers" onclick="filter()" id="trousers" >
+                        <label style="font-size: 15px;" for="trousers" id="cat2" >Belly Shoes</label> <br>
+
+                        <input type="checkbox"  value="track" onclick="filter()" id="track" >
+                        <label style="font-size: 15px;" for="track" id="cat2" >Flip Flops</label> <br>
+
+                        <input type="checkbox"  value="skirt" onclick="filter()" id="skirt" >
+                        <label style="font-size: 15px;" for="skirt" id="cat2" >Loafers</label> <br><hr>
+
+                     
+                        <input type="checkbox"  value="white" onclick="filter()" id="white" >
+                        <label style="font-size: 15px;" for="white" id="cat2" >On Sale</label> <br><hr>
+                        
+                            </a></li>
+                  </div>
+                      <h5 style="font-size: 15px; font-weight: 700; cursor: pointer;" class="card-title mt-2" id="cats">FILTER BY</h5>
+                      <div id="cat3">
+                        <div class="dropdown">
+                            <button style="border-radius: 1px solid black;" class="btn btn-white dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Gender
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li><input type="checkbox"  value="australia" onclick="filter2()" id="australia" >
+                                <label style="font-size: 14px;" for="australia" id="cat3" >Boys</label> <br></li>
+                              <li><input type="checkbox"  value="india" onclick="filter2()" id="india" >
+                                <label style="font-size: 14px;" for="india" id="cat3" >Girls</label> <br></li>
+                             
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button style="border-radius: 1px solid black;" class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Brand
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                               
+                                <li> <input type="checkbox"  value="COLT" onclick="filter()" id="COLT" >
+                                  <label style="font-size: 14px;" for="COLT" id="cat3" >Colt</label> <br></li>
+                                 
+                                  <li> <input type="checkbox"  value="SUGR GIRL" onclick="filter()" id="SUGR GIRL" >
+                                    <label style="font-size: 14px;" for="SUGR GIRL" id="cat3" >Sugr Girl</label> <br></li>
+
+                                    <li> <input type="checkbox"  value="UNLIMITED" onclick="filter()" id="UNLIMITED" >
+                                      <label style="font-size: 14px;" for="UNLIMITED" id="cat3" >Unlimited</label> <br></li>
+
+                              <li><input type="checkbox"  value="DONUTS" onclick="filter()" id="DONUTS" >
+                                <label style="font-size: 14px;" for="DONUTS" id="cat3" >Donuts</label> <br></li>
+
+                                  
+                                 
+                                    
+                                    <li> <input type="checkbox"  value="THE CHILDREN'S PLACE" onclick="filter()" id="THE CHILDREN'S PLACE" >
+                                        <label style="font-size: 14px;" for="THE CHILDREN'S PLACE" id="cat3" >The Children's Place</label> <br></li>
+                                    
+                                      
+
+
+
+                              
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button style="border-radius: 1px solid black;" class="btn btn-white dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Size
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li> <input type="checkbox"  value="babya" onclick="filter2()" id="babya" >
+                                <label style="font-size: 14px;" for="babya" id="cat3" >21</label> <br></li>
+
+                                <li> <input type="checkbox"  value="babyaa" onclick="filter2()" id="babyaa" >
+                                  <label style="font-size: 14px;" for="babyaa" id="cat3" >22</label> <br></li>
+
+                                  <li> <input type="checkbox"  value="babyai" onclick="filter2()" id="babyai" >
+                                    <label style="font-size: 14px;" for="babyai" id="cat3" >23</label> <br></li>
+
+                                    <li> <input type="checkbox"  value="babyaw" onclick="filter2()" id="babyaw" >
+                                      <label style="font-size: 14px;" for="babyaw" id="cat3" >24</label> <br></li>
+
+                                      <li> <input type="checkbox"  value="babyaaa" onclick="filter2()" id="babyaaa" >
+                                        <label style="font-size: 14px;" for="babyaaa" id="cat3" >25</label> <br></li>
+
+                                        <li> <input type="checkbox"  value="babys" onclick="filter2()" id="babys" >
+                                          <label style="font-size: 14px;" for="babys" id="cat3" >26</label> <br></li>
+
+                                        
+
+                                            <li> <input type="checkbox"  value="babyar" onclick="filter2()" id="babyar" >
+                                              <label style="font-size: 14px;" for="babyar" id="cat3" >27</label> <br></li>
+
+                                              <li> <input type="checkbox"  value="babyss" onclick="filter2()" id="babyss" >
+                                                <label style="font-size: 14px;" for="babyss" id="cat3" >28</label> <br></li>
+
+                                                <li> <input type="checkbox"  value="babyssq" onclick="filter2()" id="babyssq" >
+                                                  <label style="font-size: 14px;" for="babyssq" id="cat3" >29</label> <br></li>
+
+                                                  <li> <input type="checkbox"  value="babysss" onclick="filter2()" id="babysss" >
+                                                    <label style="font-size: 14px;" for="babysss" id="cat3" >30</label> <br></li>
+
+                                                    <li> <input type="checkbox"  value="babyu" onclick="filter2()" id="babyu" >
+                                                        <label style="font-size: 14px;" for="babyu" id="cat3" >31</label> <br></li>
+
+                                                        <li> <input type="checkbox"  value="babyi" onclick="filter2()" id="babyi" >
+                                                            <label style="font-size: 14px;" for="babyi" id="cat3" >32</label> <br></li>
+
+                                                            <li> <input type="checkbox"  value="babyo" onclick="filter2()" id="babyo" >
+                                                                <label style="font-size: 14px;" for="babyo" id="cat3" >33</label> <br></li>
+
+                                                                <li> <input type="checkbox"  value="babyf" onclick="filter2()" id="babyf" >
+                                                                    <label style="font-size: 14px;" for="babyf" id="cat3" >34</label> <br></li>
+
+                                                                    <li> <input type="checkbox"  value="babyg" onclick="filter2()" id="babyg" >
+                                                                        <label style="font-size: 14px;" for="babyg" id="cat3" >6Y</label> <br></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button style="border-radius: 1px solid black;" class="btn btn-white dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Color
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li> <input type="checkbox"  value="blue" onclick="filter2()" id="blue" >
+                                <label style="font-size: 14px;" for="blue" id="cat3" >Blue</label> <br></li>
+
+                                <li> <input type="checkbox"  value="black" onclick="filter2()" id="black" >
+                                    <label style="font-size: 14px;" for="black" id="cat3" >Black</label> <br></li>
+
+                                <li> <input type="checkbox"  value="assort" onclick="filter2()" id="assort" >
+                                  <label style="font-size: 14px;" for="assort" id="cat3" >Assorted</label> <br></li>
+
+                                  <li> <input type="checkbox"  value="whitte" onclick="filter2()" id="whitte" >
+                                    <label style="font-size: 14px;" for="whitte" id="cat3" >White</label> <br></li>
+
+                                    <li> <input type="checkbox"  value="redd" onclick="filter2()" id="redd" >
+                                      <label style="font-size: 14px;" for="redd" id="cat3" >Red</label> <br></li>
+
+                                      <li> <input type="checkbox"  value="green" onclick="filter2()" id="green" >
+                                        <label style="font-size: 14px;" for="green" id="cat3" >Green</label> <br></li>
+                                      
+                                      <li> <input type="checkbox"  value="pinkk" onclick="filter2()" id="pinkk" >
+                                        <label style="font-size: 14px;" for="pinkk" id="cat3" >Pink</label> <br></li>
+
+                                        <li> <input type="checkbox"  value="brown" onclick="filter2()" id="brown" >
+                                            <label style="font-size: 14px;" for="brown" id="cat3" >Brown</label> <br></li>
+                                        
+                                        <li> <input type="checkbox"  value="yellow" onclick="filter2()" id="yellow" >
+                                          <label style="font-size: 14px;" for="yellow" id="cat3" >Yellow</label> <br></li>
+
+                                          <li> <input type="checkbox"  value="grey" onclick="filter2()" id="grey" >
+                                            <label style="font-size: 14px;" for="grey" id="cat3" >Grey</label> <br></li>
+
+                                            </ul>
+                          </div>
+                         
+                         
+                          
+                        </a></li>
+     </div>
+                       
+                   
+                </div>
+              </div></div>
+              
+              <div class="col-8"> <div style="width: 111%; " class="container">
+                <!-- filter -->
+               <!-- <div class="card1"></div> -->
+               <div style="width: 100%;" class="container">
+               <div class="dropdown">
+                <button style="margin-left: 55%;margin-top: 3%;" class="btn btn- dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort:
+                </button>
+                <ul style="margin-left: 55%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a style="font-size: 12px;" class="dropdown-item" for="check-bar" id="check-bar" class="bar" onclick="priceSort()" href="#"> Price: Low to High</a></li>
+                    <li><a style="font-size: 12px;" class="dropdown-item" for="check-bar" id="check-bar" class="bar" onclick="priceSort2()" href="#">Price: High to Low</a></li>
+                    
+                </ul>
+              </div>
+            
+                <div style="margin-top: 1%;margin-left: -30%;" class="row row-cols-1 row-cols-md-3 g-4" id="products">
+                        <!-- Card bor -->
+                    
+                  </div>
+            </div>
+          </div>
+</div>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="data7.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

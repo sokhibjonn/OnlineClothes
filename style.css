@@ -1,0 +1,67 @@
+#project1{
+    cursor: pointer;
+}
+#project1:hover {
+    color: #ff3399;
+}
+
+#project1 h4:hover {
+    color: white;
+}
+
+#project1 h4 {
+    text-transform: uppercase;
+}
+.hide {
+    display: none;
+  }
+#project1:hover + .hide {
+    display: inline-block;
+    color: red;
+  }
+  
+
+
+
+
+
+
+  #project2{
+    cursor: pointer;
+}
+#project2:hover {
+    color: #ff3399;
+}
+
+#project2 h4:hover {
+    color: white;
+}
+
+#project2 h4 {
+    text-transform: uppercase;
+}
+.hidee {
+    display: none;
+  }
+#project2:hover + .hidee {
+    display: inline-block;
+    color: red;
+  }
+
+
+
+  .card1 {
+    width: 50%;
+    height: 200px;
+    background: url("https://cdn06.nnnow.com/web-images/medium/styles/D5TQS0PVIF2/1657196835900/1.jpg") no-repeat;
+    display: inline-block;
+}
+.card1:hover {
+    background: url("https://cdn16.nnnow.com/web-images/medium/styles/MTT5G8D9HX7/1639630501379/1.jpg") no-repeat;
+}
+
+.mma{
+ color:black;
+ text-align:center;
+ margin-left:5%
+}
